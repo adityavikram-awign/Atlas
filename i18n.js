@@ -287,6 +287,21 @@ const I18N = {
       {
         "t": "Confirm in the group",
         "d": "Post in the WhatsApp group that you're done. Stuck at any step? Share a screenshot there and we'll guide you step by step."
+      },
+      {
+        "t": "Set up the Atlas Capture app",
+        "d": "Atlas Capture is the app you record in. Here you sign in with your email, not your mobile number.",
+        "list": [
+          "Open Atlas Capture and tap External Partner (not the personal option).",
+          "Choose Recorder.",
+          "Enter the access code AWIGNH, in capital letters.",
+          "Tap Continue with Email, enter your email, then the 6-digit OTP sent to your inbox.",
+          "Enter your legal first and last name, a username with no spaces, and your date of birth (18 or older).",
+          "Answer the short housing question to link your workspace.",
+          "Allow camera and microphone, then read and accept the 3 safety rules.",
+          "Confirm your country, tick all 3 privacy and recording consents, and accept the NDA and motion-sensor permission."
+        ],
+        "done": "You're done when you see “Put your phone on your headstrap”."
       }
     ],
     "btnApp": "Get the Awign app",
@@ -329,7 +344,11 @@ const I18N = {
       "Intentionally slow",
       "Poor lighting"
     ],
-    "fExamples": "Examples"
+    "fExamples": "Examples",
+    "codeLabel": "Access code",
+    "copy": "Copy",
+    "copied": "Copied",
+    "setupVideoCap": "Watch the setup (English, 1 min)"
   },
   "hi": {
     "themeLabel": "थीम बदलें",
@@ -614,6 +633,21 @@ const I18N = {
       {
         "t": "ग्रुप में बताएँ",
         "d": "काम पूरा होने पर WhatsApp ग्रुप में बताएँ। किसी स्टेप पर अटके हैं? वहाँ स्क्रीनशॉट भेजें, हम आपको स्टेप-बाय-स्टेप गाइड करेंगे।"
+      },
+      {
+        "t": "Atlas Capture ऐप सेट अप करें",
+        "d": "Atlas Capture वह ऐप है जिसमें आप रिकॉर्ड करते हैं। इसमें मोबाइल नंबर से नहीं, ईमेल से लॉगिन होता है।",
+        "list": [
+          "Atlas Capture खोलें और External Partner पर टैप करें (पर्सनल विकल्प नहीं)।",
+          "Recorder चुनें।",
+          "एक्सेस कोड AWIGNH डालें, कैपिटल लेटर्स में।",
+          "Continue with Email पर टैप करें, अपना ईमेल डालें, फिर इनबॉक्स में आया 6 अंकों का OTP डालें।",
+          "अपना असली पहला और आख़िरी नाम, बिना स्पेस वाला यूज़रनेम और जन्मतिथि डालें (18 साल या ज़्यादा)।",
+          "वर्कस्पेस जोड़ने के लिए घर (हाउसिंग) से जुड़े छोटे सवाल का जवाब दें।",
+          "कैमरा और माइक्रोफ़ोन की परमिशन Allow करें, फिर 3 सेफ़्टी नियम पढ़कर स्वीकार करें।",
+          "अपना देश कन्फ़र्म करें, प्राइवेसी और रिकॉर्डिंग की तीनों सहमतियों पर टिक करें, और NDA व मोशन सेंसर परमिशन स्वीकार करें।"
+        ],
+        "done": "जब “Put your phone on your headstrap” दिखे, तो सेटअप पूरा है।"
       }
     ],
     "btnApp": "Awign ऐप डाउनलोड करें",
@@ -656,7 +690,11 @@ const I18N = {
       "जानबूझकर धीमा काम",
       "कम रोशनी"
     ],
-    "fExamples": "उदाहरण"
+    "fExamples": "उदाहरण",
+    "codeLabel": "एक्सेस कोड",
+    "copy": "कॉपी करें",
+    "copied": "कॉपी हो गया",
+    "setupVideoCap": "सेटअप देखें (हिंदी, 1 मिनट)"
   },
   "kn": {
     "themeLabel": "ಥೀಮ್ ಬದಲಿಸಿ",
@@ -941,6 +979,21 @@ const I18N = {
       {
         "t": "ಗುಂಪಿನಲ್ಲಿ ತಿಳಿಸಿ",
         "d": "ಮುಗಿದ ನಂತರ WhatsApp ಗುಂಪಿನಲ್ಲಿ ತಿಳಿಸಿ. ಯಾವುದಾದರೂ ಹಂತದಲ್ಲಿ ಸಿಲುಕಿದ್ದೀರಾ? ಅಲ್ಲಿ ಸ್ಕ್ರೀನ್‌ಶಾಟ್ ಹಂಚಿಕೊಳ್ಳಿ, ನಾವು ಹಂತ ಹಂತವಾಗಿ ಮಾರ್ಗದರ್ಶನ ನೀಡುತ್ತೇವೆ."
+      },
+      {
+        "t": "Atlas Capture ಆ್ಯಪ್ ಸೆಟಪ್ ಮಾಡಿ",
+        "d": "Atlas Capture ನೀವು ರೆಕಾರ್ಡ್ ಮಾಡುವ ಆ್ಯಪ್. ಇಲ್ಲಿ ಮೊಬೈಲ್ ಸಂಖ್ಯೆಯಿಂದಲ್ಲ, ಇಮೇಲ್‌ನಿಂದ ಲಾಗಿನ್ ಆಗುತ್ತೀರಿ.",
+        "list": [
+          "Atlas Capture ತೆರೆದು External Partner ಮೇಲೆ ಟ್ಯಾಪ್ ಮಾಡಿ (ವೈಯಕ್ತಿಕ ಆಯ್ಕೆ ಅಲ್ಲ).",
+          "Recorder ಆಯ್ಕೆಮಾಡಿ.",
+          "ಆಕ್ಸೆಸ್ ಕೋಡ್ AWIGNH ಅನ್ನು ದೊಡ್ಡಕ್ಷರಗಳಲ್ಲಿ ನಮೂದಿಸಿ.",
+          "Continue with Email ಟ್ಯಾಪ್ ಮಾಡಿ, ನಿಮ್ಮ ಇಮೇಲ್ ನಮೂದಿಸಿ, ನಂತರ ಇನ್‌ಬಾಕ್ಸ್‌ಗೆ ಬಂದ 6 ಅಂಕಿಯ OTP ನಮೂದಿಸಿ.",
+          "ನಿಮ್ಮ ನಿಜವಾದ ಮೊದಲ ಮತ್ತು ಕೊನೆಯ ಹೆಸರು, ಸ್ಪೇಸ್ ಇಲ್ಲದ ಯೂಸರ್‌ನೇಮ್ ಮತ್ತು ಜನ್ಮದಿನಾಂಕ ನಮೂದಿಸಿ (18 ವರ್ಷ ಅಥವಾ ಹೆಚ್ಚು).",
+          "ವರ್ಕ್‌ಸ್ಪೇಸ್ ಲಿಂಕ್ ಮಾಡಲು ಮನೆಯ (ಹೌಸಿಂಗ್) ಕುರಿತ ಚಿಕ್ಕ ಪ್ರಶ್ನೆಗೆ ಉತ್ತರಿಸಿ.",
+          "ಕ್ಯಾಮೆರಾ ಮತ್ತು ಮೈಕ್ರೋಫೋನ್ ಅನುಮತಿಯನ್ನು Allow ಮಾಡಿ, ನಂತರ 3 ಸುರಕ್ಷತಾ ನಿಯಮಗಳನ್ನು ಓದಿ ಒಪ್ಪಿಕೊಳ್ಳಿ.",
+          "ನಿಮ್ಮ ದೇಶವನ್ನು ದೃಢೀಕರಿಸಿ, ಗೌಪ್ಯತೆ ಮತ್ತು ರೆಕಾರ್ಡಿಂಗ್‌ನ ಮೂರೂ ಒಪ್ಪಿಗೆಗಳಿಗೆ ಟಿಕ್ ಮಾಡಿ, ಮತ್ತು NDA ಹಾಗೂ ಮೋಷನ್ ಸೆನ್ಸರ್ ಅನುಮತಿಯನ್ನು ಸ್ವೀಕರಿಸಿ."
+        ],
+        "done": "“Put your phone on your headstrap” ಕಾಣಿಸಿದಾಗ ಸೆಟಪ್ ಪೂರ್ಣಗೊಂಡಿದೆ."
       }
     ],
     "btnApp": "Awign ಆ್ಯಪ್ ಪಡೆಯಿರಿ",
@@ -983,7 +1036,11 @@ const I18N = {
       "ಉದ್ದೇಶಪೂರ್ವಕವಾಗಿ ನಿಧಾನ",
       "ಕಡಿಮೆ ಬೆಳಕು"
     ],
-    "fExamples": "ಉದಾಹರಣೆಗಳು"
+    "fExamples": "ಉದಾಹರಣೆಗಳು",
+    "codeLabel": "ಆಕ್ಸೆಸ್ ಕೋಡ್",
+    "copy": "ಕಾಪಿ ಮಾಡಿ",
+    "copied": "ಕಾಪಿ ಆಯಿತು",
+    "setupVideoCap": "ಸೆಟಪ್ ನೋಡಿ (ಹಿಂದಿಯಲ್ಲಿ, 1 ನಿಮಿಷ)"
   },
   "mr": {
     "themeLabel": "थीम बदला",
@@ -1268,6 +1325,21 @@ const I18N = {
       {
         "t": "ग्रुपमध्ये कळवा",
         "d": "पूर्ण झाल्यावर WhatsApp ग्रुपमध्ये कळवा. एखाद्या पायरीवर अडकलात? तिथे स्क्रीनशॉट शेअर करा, आम्ही टप्प्याटप्प्याने मार्गदर्शन करू."
+      },
+      {
+        "t": "Atlas Capture अ‍ॅप सेट अप करा",
+        "d": "Atlas Capture हे तुम्ही रेकॉर्ड करता ते अ‍ॅप आहे. यात मोबाइल नंबरने नाही, ईमेलने लॉगिन होते.",
+        "list": [
+          "Atlas Capture उघडा आणि External Partner वर टॅप करा (वैयक्तिक पर्याय नाही).",
+          "Recorder निवडा.",
+          "अ‍ॅक्सेस कोड AWIGNH कॅपिटल अक्षरांत टाका.",
+          "Continue with Email वर टॅप करा, तुमचा ईमेल टाका, मग इनबॉक्समध्ये आलेला 6 अंकी OTP टाका.",
+          "तुमचे खरे पहिले नाव आणि आडनाव, स्पेस नसलेले यूजरनेम आणि जन्मतारीख टाका (18 वर्षे किंवा जास्त).",
+          "वर्कस्पेस जोडण्यासाठी घराबद्दलच्या (हाउसिंग) छोट्या प्रश्नाचे उत्तर द्या.",
+          "कॅमेरा आणि मायक्रोफोनची परवानगी Allow करा, मग 3 सुरक्षा नियम वाचून स्वीकारा.",
+          "तुमचा देश निश्चित करा, गोपनीयता आणि रेकॉर्डिंगच्या तिन्ही संमतींवर टिक करा, आणि NDA व मोशन सेन्सर परवानगी स्वीकारा."
+        ],
+        "done": "“Put your phone on your headstrap” दिसल्यावर सेटअप पूर्ण झाला."
       }
     ],
     "btnApp": "Awign अ‍ॅप मिळवा",
@@ -1310,7 +1382,11 @@ const I18N = {
       "मुद्दाम हळू केलेले काम",
       "कमी प्रकाश"
     ],
-    "fExamples": "उदाहरणे"
+    "fExamples": "उदाहरणे",
+    "codeLabel": "अ‍ॅक्सेस कोड",
+    "copy": "कॉपी करा",
+    "copied": "कॉपी झाले",
+    "setupVideoCap": "सेटअप पाहा (हिंदीत, 1 मिनिट)"
   }
 };
 
@@ -1329,6 +1405,15 @@ const CONFIG = {
   AWIGN_URL: "https://www.awign.com/",
 
   RATE: 250,
+
+  // Atlas Capture setup (step 7). English video for English, Hindi for the rest.
+  ACCESS_CODE: "AWIGNH",
+  SETUP_VIDEO: {
+    en: "assets/video/atlas-setup-en.mp4",
+    hi: "assets/video/atlas-setup-hi.mp4",
+    kn: "assets/video/atlas-setup-hi.mp4",
+    mr: "assets/video/atlas-setup-hi.mp4",
+  },
 
   // Example images (what the work looks like) and approved / rejected clips.
   WORK_IMAGES: ["assets/img/pov-dishes.jpg", "assets/img/pov-sorting.jpg", "assets/img/pov-wiping.jpg", "assets/img/pov-crafting.jpg"],

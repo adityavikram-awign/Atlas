@@ -28,6 +28,7 @@
   var CHEV = svg('<polyline points="6 9 12 15 18 9"/>', 2.2);
   var ARROW = svg('<path d="M7 17L17 7M8 7h9v9"/>', 2.2);
   var DOWNLOAD = svg('<path d="M12 3v12M7 10l5 5 5-5M5 21h14"/>', 2.2);
+  var COPY = svg('<rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 012-2h10"/>', 2);
   var DOC = svg('<path d="M14 3H7a2 2 0 00-2 2v14a2 2 0 002 2h10a2 2 0 002-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h4"/>', 2);
   var WA = '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.35A10 10 0 1012 2zm0 1.9a8.1 8.1 0 11-4.2 15l-.3-.18-2.6.7.7-2.55-.2-.31A8.1 8.1 0 0112 3.9zm-3.6 3.7c-.17 0-.45.06-.68.31-.23.25-.9.87-.9 2.12s.92 2.46 1.05 2.63c.13.17 1.8 2.86 4.42 3.9 2.18.86 2.62.69 3.1.64.47-.04 1.5-.61 1.72-1.2.21-.6.21-1.1.15-1.2-.06-.11-.23-.17-.48-.3-.25-.12-1.5-.74-1.73-.82-.23-.09-.4-.13-.57.12s-.65.82-.8.99c-.14.17-.29.19-.54.06-.25-.12-1.06-.39-2.02-1.25-.75-.66-1.25-1.48-1.4-1.73-.14-.25-.01-.38.11-.5.11-.11.25-.29.38-.44.12-.15.16-.25.24-.42.08-.17.04-.31-.02-.44-.06-.12-.56-1.37-.77-1.87-.2-.49-.4-.42-.55-.43h-.47z"/></svg>';
 
@@ -97,8 +98,47 @@
       if (i === 0) body += '<div class="step__act">' + joinButton() + "</div>";
       if (i === 1) body += '<div class="step__act">' + linkButton(CONFIG.AWIGN_APP_URL, t().btnApp, DOWNLOAD, "awign_app") + "</div>";
       if (i === 3) body += '<div class="step__act">' + linkButton(CONFIG.OFFER_LETTER_URL, t().btnOffer, DOC, "offer_letter") + "</div>";
+      if (i === 6) {
+        body = "<h3>" + esc(s.t) + "</h3><p>" + esc(s.d) + "</p>" +
+          '<div class="code"><div><span class="code__l">' + esc(t().codeLabel) + '</span><b class="code__v">' + esc(CONFIG.ACCESS_CODE) +
+          '</b></div><button type="button" class="btn btn--primary code__btn" id="copy-code">' + COPY + "<span>" + esc(t().copy) + "</span></button></div>" +
+          '<ul class="step__list">' + s.list.map(function (x) { return "<li>" + esc(x) + "</li>"; }).join("") + "</ul>" +
+          '<p class="step__done">' + CHECK + "<span>" + esc(s.done) + "</span></p>" +
+          '<figure class="phone"><div class="phone__frame"><video id="setup-video" controls playsinline preload="metadata" src="' +
+          esc(CONFIG.SETUP_VIDEO[lang]) + '#t=0.1"></video></div><figcaption>' + esc(t().setupVideoCap) + "</figcaption></figure>";
+      }
       return '<li class="step"><span class="step__n">' + (i + 1) + '</span><div class="step__b">' + body + "</div></li>";
     }).join("");
+
+    var v = $("setup-video");
+    if (v) v.addEventListener("play", function () { track("setup_video_play"); }, { once: true });
+    var btn = $("copy-code");
+    if (btn) btn.addEventListener("click", function () { copyCode(btn); });
+  }
+
+  function copyCode(btn) {
+    var code = CONFIG.ACCESS_CODE;
+    function ok() {
+      btn.querySelector("span").textContent = t().copied;
+      btn.classList.add("is-done");
+      setTimeout(function () { btn.querySelector("span").textContent = t().copy; btn.classList.remove("is-done"); }, 1800);
+      track("copy_code");
+    }
+    if (navigator.clipboard && window.isSecureContext) {
+      navigator.clipboard.writeText(code).then(ok, fallback);
+    } else {
+      fallback();
+    }
+    function fallback() {
+      var ta = document.createElement("textarea");
+      ta.value = code;
+      ta.setAttribute("readonly", "");
+      ta.style.cssText = "position:fixed;opacity:0;top:0";
+      document.body.appendChild(ta);
+      ta.select();
+      try { document.execCommand("copy"); ok(); } catch (e) {}
+      document.body.removeChild(ta);
+    }
   }
 
   function renderWork() {
