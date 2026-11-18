@@ -13,14 +13,6 @@ const I18N = {
     "groupSoon": "Group link coming soon",
     "aboutTitle": "What is the Atlas Project?",
     "aboutBody": "The Atlas Project collects high-quality videos of people doing simple, everyday tasks at home. These videos train AI and robotics systems to recognise and copy human hand movements, the order of steps in a task, and real-world actions.",
-    "aboutTags": [
-      "Cooking",
-      "Cleaning",
-      "Pouring",
-      "Organising",
-      "Laundry",
-      "Washing up"
-    ],
     "eligTitle": "Who can join",
     "eligBody": "Check all seven before you start. Recordings that don't meet them won't pass the quality check.",
     "elig": [
@@ -195,7 +187,6 @@ const I18N = {
       "Flagged videos are still paid — fix the issue in your next recordings.",
       "Payouts go to the bank account you add in the Awign app, so keep those details correct."
     ],
-    "appVideoCap": "How to log in to Atlas Capture (in Hindi)",
     "faqTitle": "Questions",
     "faq": [
       {
@@ -296,10 +287,6 @@ const I18N = {
       {
         "t": "Confirm in the group",
         "d": "Post in the WhatsApp group that you're done. Stuck at any step? Share a screenshot there and we'll guide you step by step."
-      },
-      {
-        "t": "Log in to Atlas Capture and record",
-        "d": "Watch the login video, put on the head-mount, and record in landscape with both hands in frame."
       }
     ],
     "btnApp": "Get the Awign app",
@@ -319,7 +306,30 @@ const I18N = {
     "fAwignApp": "Awign app",
     "fGroup": "WhatsApp group",
     "fPrivacy": "Privacy",
-    "fTerms": "Terms"
+    "fTerms": "Terms",
+    "exTitle": "See what the work looks like",
+    "exBody": "Ordinary tasks, filmed from where your eyes are. Below are six real recordings: three that passed review and three that were rejected.",
+    "workCap": [
+      "Washing up",
+      "Sorting and organising",
+      "Cleaning a surface",
+      "Making something by hand"
+    ],
+    "goodTag": "Do it like this",
+    "goodHeading": "Footage that passes",
+    "goodClips": [
+      "Folding clothes",
+      "Cleaning utensils",
+      "Ironing clothes"
+    ],
+    "badTag": "Never do this",
+    "badHeading": "Footage that gets rejected",
+    "badClips": [
+      "Not a meaningful task",
+      "Intentionally slow",
+      "Poor lighting"
+    ],
+    "fExamples": "Examples"
   },
   "hi": {
     "themeLabel": "थीम बदलें",
@@ -330,14 +340,6 @@ const I18N = {
     "groupSoon": "ग्रुप लिंक जल्द आएगा",
     "aboutTitle": "एटलस प्रोजेक्ट क्या है?",
     "aboutBody": "एटलस प्रोजेक्ट में लोगों के घर पर रोज़मर्रा के आसान काम करते हुए अच्छी क्वालिटी के वीडियो इकट्ठा किए जाते हैं। इन वीडियो से AI और रोबोटिक्स सिस्टम इंसानी हाथों की हरकतें, काम के स्टेप्स का क्रम और असली दुनिया की गतिविधियाँ पहचानना और दोहराना सीखते हैं।",
-    "aboutTags": [
-      "खाना बनाना",
-      "सफ़ाई",
-      "कुछ डालना",
-      "सामान जमाना",
-      "कपड़े धोना",
-      "बर्तन धोना"
-    ],
     "eligTitle": "कौन जुड़ सकता है",
     "eligBody": "शुरू करने से पहले ये सातों बातें जाँच लें। जो रिकॉर्डिंग इन पर खरी नहीं उतरती, वह क्वालिटी चेक में पास नहीं होगी।",
     "elig": [
@@ -512,7 +514,6 @@ const I18N = {
       "फ़्लैग हुए वीडियो का भुगतान होता है — अगली रिकॉर्डिंग में गलती सुधारें।",
       "पेमेंट उसी बैंक खाते में आता है जो आप Awign ऐप में जोड़ते हैं, इसलिए डिटेल्स सही रखें।"
     ],
-    "appVideoCap": "एटलस कैप्चर में लॉग इन कैसे करें (हिंदी में)",
     "faqTitle": "सवाल-जवाब",
     "faq": [
       {
@@ -613,10 +614,6 @@ const I18N = {
       {
         "t": "ग्रुप में बताएँ",
         "d": "काम पूरा होने पर WhatsApp ग्रुप में बताएँ। किसी स्टेप पर अटके हैं? वहाँ स्क्रीनशॉट भेजें, हम आपको स्टेप-बाय-स्टेप गाइड करेंगे।"
-      },
-      {
-        "t": "Atlas Capture में लॉगिन करें और रिकॉर्ड करें",
-        "d": "लॉगिन वीडियो देखें, हेड-माउंट लगाएँ, और लैंडस्केप में दोनों हाथ फ़्रेम में रखकर रिकॉर्ड करें।"
       }
     ],
     "btnApp": "Awign ऐप डाउनलोड करें",
@@ -636,7 +633,30 @@ const I18N = {
     "fAwignApp": "Awign ऐप",
     "fGroup": "WhatsApp ग्रुप",
     "fPrivacy": "प्राइवेसी",
-    "fTerms": "शर्तें"
+    "fTerms": "शर्तें",
+    "exTitle": "काम कैसा दिखता है",
+    "exBody": "आम घरेलू काम, आपकी आँखों की नज़र से रिकॉर्ड किए गए। नीचे छह असली रिकॉर्डिंग हैं: तीन जो पास हुईं और तीन जो रिजेक्ट हुईं।",
+    "workCap": [
+      "बर्तन धोना",
+      "चीज़ें छाँटना और जमाना",
+      "सतह साफ़ करना",
+      "हाथ से कुछ बनाना"
+    ],
+    "goodTag": "ऐसे करें",
+    "goodHeading": "जो रिकॉर्डिंग पास होती है",
+    "goodClips": [
+      "कपड़े तह करना",
+      "बर्तन साफ़ करना",
+      "कपड़े इस्त्री करना"
+    ],
+    "badTag": "ऐसा कभी न करें",
+    "badHeading": "जो रिकॉर्डिंग रिजेक्ट होती है",
+    "badClips": [
+      "कोई सार्थक काम नहीं",
+      "जानबूझकर धीमा काम",
+      "कम रोशनी"
+    ],
+    "fExamples": "उदाहरण"
   },
   "kn": {
     "themeLabel": "ಥೀಮ್ ಬದಲಿಸಿ",
@@ -647,14 +667,6 @@ const I18N = {
     "groupSoon": "ಗುಂಪಿನ ಲಿಂಕ್ ಶೀಘ್ರದಲ್ಲೇ",
     "aboutTitle": "ಅಟ್ಲಾಸ್ ಪ್ರಾಜೆಕ್ಟ್ ಎಂದರೇನು?",
     "aboutBody": "ಅಟ್ಲಾಸ್ ಪ್ರಾಜೆಕ್ಟ್ ಜನರು ಮನೆಯಲ್ಲಿ ಸರಳ ದಿನನಿತ್ಯದ ಕೆಲಸಗಳನ್ನು ಮಾಡುವ ಉತ್ತಮ ಗುಣಮಟ್ಟದ ವೀಡಿಯೊಗಳನ್ನು ಸಂಗ್ರಹಿಸುತ್ತದೆ. ಈ ವೀಡಿಯೊಗಳಿಂದ AI ಮತ್ತು ರೋಬೋಟಿಕ್ಸ್ ವ್ಯವಸ್ಥೆಗಳು ಮಾನವರ ಕೈ ಚಲನೆಗಳು, ಕೆಲಸದ ಹಂತಗಳ ಕ್ರಮ ಮತ್ತು ನೈಜ ಜಗತ್ತಿನ ಕ್ರಿಯೆಗಳನ್ನು ಗುರುತಿಸಲು ಮತ್ತು ಅನುಕರಿಸಲು ಕಲಿಯುತ್ತವೆ.",
-    "aboutTags": [
-      "ಅಡುಗೆ",
-      "ಸ್ವಚ್ಛತೆ",
-      "ಸುರಿಯುವುದು",
-      "ಜೋಡಿಸುವುದು",
-      "ಬಟ್ಟೆ ಒಗೆಯುವುದು",
-      "ಪಾತ್ರೆ ತೊಳೆಯುವುದು"
-    ],
     "eligTitle": "ಯಾರು ಸೇರಬಹುದು",
     "eligBody": "ಪ್ರಾರಂಭಿಸುವ ಮೊದಲು ಈ ಏಳನ್ನೂ ಪರಿಶೀಲಿಸಿ. ಇವುಗಳಿಗೆ ಹೊಂದದ ರೆಕಾರ್ಡಿಂಗ್ ಗುಣಮಟ್ಟ ಪರಿಶೀಲನೆಯಲ್ಲಿ ಪಾಸ್ ಆಗುವುದಿಲ್ಲ.",
     "elig": [
@@ -829,7 +841,6 @@ const I18N = {
       "ಫ್ಲ್ಯಾಗ್ ಆದ ವೀಡಿಯೊಗಳಿಗೆ ಪಾವತಿ ಇದೆ — ಮುಂದಿನ ರೆಕಾರ್ಡಿಂಗ್‌ಗಳಲ್ಲಿ ತಪ್ಪನ್ನು ಸರಿಪಡಿಸಿ.",
       "ಪಾವತಿ ನೀವು Awign ಆ್ಯಪ್‌ನಲ್ಲಿ ಸೇರಿಸುವ ಬ್ಯಾಂಕ್ ಖಾತೆಗೆ ಬರುತ್ತದೆ, ಆದ್ದರಿಂದ ವಿವರಗಳು ಸರಿಯಾಗಿರಲಿ."
     ],
-    "appVideoCap": "ಅಟ್ಲಾಸ್ ಕ್ಯಾಪ್ಚರ್‌ಗೆ ಲಾಗಿನ್ ಆಗುವುದು ಹೇಗೆ (ಹಿಂದಿಯಲ್ಲಿ)",
     "faqTitle": "ಪ್ರಶ್ನೆಗಳು",
     "faq": [
       {
@@ -930,10 +941,6 @@ const I18N = {
       {
         "t": "ಗುಂಪಿನಲ್ಲಿ ತಿಳಿಸಿ",
         "d": "ಮುಗಿದ ನಂತರ WhatsApp ಗುಂಪಿನಲ್ಲಿ ತಿಳಿಸಿ. ಯಾವುದಾದರೂ ಹಂತದಲ್ಲಿ ಸಿಲುಕಿದ್ದೀರಾ? ಅಲ್ಲಿ ಸ್ಕ್ರೀನ್‌ಶಾಟ್ ಹಂಚಿಕೊಳ್ಳಿ, ನಾವು ಹಂತ ಹಂತವಾಗಿ ಮಾರ್ಗದರ್ಶನ ನೀಡುತ್ತೇವೆ."
-      },
-      {
-        "t": "Atlas Capture ಗೆ ಲಾಗಿನ್ ಮಾಡಿ ಮತ್ತು ರೆಕಾರ್ಡ್ ಮಾಡಿ",
-        "d": "ಲಾಗಿನ್ ವೀಡಿಯೊ ನೋಡಿ, ಹೆಡ್-ಮೌಂಟ್ ಧರಿಸಿ, ಮತ್ತು ಎರಡೂ ಕೈಗಳು ಫ್ರೇಮ್‌ನಲ್ಲಿರುವಂತೆ ಲ್ಯಾಂಡ್‌ಸ್ಕೇಪ್‌ನಲ್ಲಿ ರೆಕಾರ್ಡ್ ಮಾಡಿ."
       }
     ],
     "btnApp": "Awign ಆ್ಯಪ್ ಪಡೆಯಿರಿ",
@@ -953,7 +960,30 @@ const I18N = {
     "fAwignApp": "Awign ಆ್ಯಪ್",
     "fGroup": "WhatsApp ಗುಂಪು",
     "fPrivacy": "ಗೌಪ್ಯತೆ",
-    "fTerms": "ಷರತ್ತುಗಳು"
+    "fTerms": "ಷರತ್ತುಗಳು",
+    "exTitle": "ಕೆಲಸ ಹೇಗೆ ಕಾಣುತ್ತದೆ",
+    "exBody": "ಸಾಮಾನ್ಯ ಮನೆಗೆಲಸಗಳು, ನಿಮ್ಮ ಕಣ್ಣಿನ ನೋಟದಿಂದ ರೆಕಾರ್ಡ್ ಮಾಡಲಾಗಿದೆ. ಕೆಳಗೆ ಆರು ನಿಜವಾದ ರೆಕಾರ್ಡಿಂಗ್‌ಗಳಿವೆ: ಪಾಸ್ ಆದ ಮೂರು ಮತ್ತು ತಿರಸ್ಕೃತವಾದ ಮೂರು.",
+    "workCap": [
+      "ಪಾತ್ರೆ ತೊಳೆಯುವುದು",
+      "ವಸ್ತುಗಳನ್ನು ವಿಂಗಡಿಸಿ ಜೋಡಿಸುವುದು",
+      "ಮೇಲ್ಮೈ ಸ್ವಚ್ಛಗೊಳಿಸುವುದು",
+      "ಕೈಯಿಂದ ಏನನ್ನಾದರೂ ತಯಾರಿಸುವುದು"
+    ],
+    "goodTag": "ಹೀಗೆ ಮಾಡಿ",
+    "goodHeading": "ಪಾಸ್ ಆಗುವ ರೆಕಾರ್ಡಿಂಗ್",
+    "goodClips": [
+      "ಬಟ್ಟೆ ಮಡಚುವುದು",
+      "ಪಾತ್ರೆ ಸ್ವಚ್ಛಗೊಳಿಸುವುದು",
+      "ಬಟ್ಟೆ ಇಸ್ತ್ರಿ ಮಾಡುವುದು"
+    ],
+    "badTag": "ಹೀಗೆ ಎಂದಿಗೂ ಮಾಡಬೇಡಿ",
+    "badHeading": "ತಿರಸ್ಕೃತವಾಗುವ ರೆಕಾರ್ಡಿಂಗ್",
+    "badClips": [
+      "ಅರ್ಥಪೂರ್ಣ ಕೆಲಸವಲ್ಲ",
+      "ಉದ್ದೇಶಪೂರ್ವಕವಾಗಿ ನಿಧಾನ",
+      "ಕಡಿಮೆ ಬೆಳಕು"
+    ],
+    "fExamples": "ಉದಾಹರಣೆಗಳು"
   },
   "mr": {
     "themeLabel": "थीम बदला",
@@ -964,14 +994,6 @@ const I18N = {
     "groupSoon": "ग्रुपची लिंक लवकरच",
     "aboutTitle": "अ‍ॅटलस प्रोजेक्ट म्हणजे काय?",
     "aboutBody": "अ‍ॅटलस प्रोजेक्टमध्ये लोक घरी रोजची सोपी कामं करताना त्यांचे उच्च दर्जाचे व्हिडिओ गोळा केले जातात. या व्हिडिओंमधून AI आणि रोबोटिक्स प्रणाली माणसाच्या हातांच्या हालचाली, कामातील पायऱ्यांचा क्रम आणि प्रत्यक्ष जगातील क्रिया ओळखायला आणि करायला शिकतात.",
-    "aboutTags": [
-      "स्वयंपाक",
-      "साफसफाई",
-      "ओतणे",
-      "वस्तू लावणे",
-      "कपडे धुणे",
-      "भांडी घासणे"
-    ],
     "eligTitle": "कोण सामील होऊ शकतं",
     "eligBody": "सुरू करण्यापूर्वी या सातही गोष्टी तपासा. ज्या रेकॉर्डिंग यात बसत नाहीत, त्या गुणवत्ता तपासणीत पास होणार नाहीत.",
     "elig": [
@@ -1146,7 +1168,6 @@ const I18N = {
       "फ्लॅग झालेल्या व्हिडिओंचे पैसे मिळतात — पुढच्या रेकॉर्डिंगमध्ये चूक सुधारा.",
       "पेमेंट तुम्ही Awign अ‍ॅपमध्ये जोडलेल्या बँक खात्यात येते, म्हणून तपशील बरोबर ठेवा."
     ],
-    "appVideoCap": "अ‍ॅटलस कॅप्चरमध्ये लॉग इन कसं करायचं (हिंदीत)",
     "faqTitle": "प्रश्नोत्तरं",
     "faq": [
       {
@@ -1247,10 +1268,6 @@ const I18N = {
       {
         "t": "ग्रुपमध्ये कळवा",
         "d": "पूर्ण झाल्यावर WhatsApp ग्रुपमध्ये कळवा. एखाद्या पायरीवर अडकलात? तिथे स्क्रीनशॉट शेअर करा, आम्ही टप्प्याटप्प्याने मार्गदर्शन करू."
-      },
-      {
-        "t": "Atlas Capture मध्ये लॉगिन करा आणि रेकॉर्ड करा",
-        "d": "लॉगिन व्हिडिओ पाहा, हेड-माउंट लावा आणि दोन्ही हात फ्रेममध्ये ठेवून लँडस्केपमध्ये रेकॉर्ड करा."
       }
     ],
     "btnApp": "Awign अ‍ॅप मिळवा",
@@ -1270,7 +1287,30 @@ const I18N = {
     "fAwignApp": "Awign अ‍ॅप",
     "fGroup": "WhatsApp ग्रुप",
     "fPrivacy": "गोपनीयता",
-    "fTerms": "अटी"
+    "fTerms": "अटी",
+    "exTitle": "काम कसं दिसतं",
+    "exBody": "रोजची घरकामं, तुमच्या डोळ्यांच्या नजरेतून रेकॉर्ड केलेली. खाली सहा खरी रेकॉर्डिंग आहेत: पास झालेली तीन आणि नाकारलेली तीन.",
+    "workCap": [
+      "भांडी धुणे",
+      "वस्तूंची वर्गवारी करून लावणे",
+      "पृष्ठभाग स्वच्छ करणे",
+      "हाताने काहीतरी बनवणे"
+    ],
+    "goodTag": "असं करा",
+    "goodHeading": "पास होणारी रेकॉर्डिंग",
+    "goodClips": [
+      "कपड्यांच्या घड्या घालणे",
+      "भांडी स्वच्छ करणे",
+      "कपड्यांना इस्त्री करणे"
+    ],
+    "badTag": "असं कधीच करू नका",
+    "badHeading": "नाकारली जाणारी रेकॉर्डिंग",
+    "badClips": [
+      "अर्थपूर्ण काम नाही",
+      "मुद्दाम हळू केलेले काम",
+      "कमी प्रकाश"
+    ],
+    "fExamples": "उदाहरणे"
   }
 };
 
@@ -1280,8 +1320,8 @@ const I18N = {
 
 const CONFIG = {
   // WhatsApp group invite link (https://chat.whatsapp.com/...).
-  // While blank, the join buttons show "Group link coming soon".
-  GROUP_URL: "",
+  // If blank, the join buttons show "Group link coming soon".
+  GROUP_URL: "https://chat.whatsapp.com/JJIFuLknb7cLDCPbifiTNq",
 
   // Awign app (registration, OTP login, offer letter, bank details).
   AWIGN_APP_URL: "https://share.google/6koR1WfRlLWUo4PqW",
@@ -1290,7 +1330,12 @@ const CONFIG = {
 
   RATE: 250,
 
-  VIDEO_LOGIN: "assets/video/atlas-login.mp4",
+  // Example images (what the work looks like) and approved / rejected clips.
+  WORK_IMAGES: ["assets/img/pov-dishes.jpg", "assets/img/pov-sorting.jpg", "assets/img/pov-wiping.jpg", "assets/img/pov-crafting.jpg"],
+  VIDEO: {
+    good: ["assets/video/good/1-clothes-folding.mp4", "assets/video/good/2-cleaning-utensils.mp4", "assets/video/good/3-ironing-clothes.mp4"],
+    bad: ["assets/video/bad/1-not-a-meaningful-task.mp4", "assets/video/bad/2-intentionally-slow.mp4", "assets/video/bad/3-poor-lighting.mp4"],
+  },
 
   SOCIAL: {
     instagram: "https://www.instagram.com/awign_india/",

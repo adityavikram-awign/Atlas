@@ -97,20 +97,34 @@
       if (i === 0) body += '<div class="step__act">' + joinButton() + "</div>";
       if (i === 1) body += '<div class="step__act">' + linkButton(CONFIG.AWIGN_APP_URL, t().btnApp, DOWNLOAD, "awign_app") + "</div>";
       if (i === 3) body += '<div class="step__act">' + linkButton(CONFIG.OFFER_LETTER_URL, t().btnOffer, DOC, "offer_letter") + "</div>";
-      if (i === 6) {
-        body += '<figure class="phone"><div class="phone__frame"><video id="login-video" controls playsinline preload="metadata"></video></div>' +
-          "<figcaption>" + esc(t().appVideoCap) + "</figcaption></figure>";
-      }
       return '<li class="step"><span class="step__n">' + (i + 1) + '</span><div class="step__b">' + body + "</div></li>";
     }).join("");
-
-    var v = $("login-video");
-    v.src = CONFIG.VIDEO_LOGIN;
-    v.addEventListener("play", function () { track("login_video_play"); }, { once: true });
   }
 
-  function renderAbout() {
-    $("about-tags").innerHTML = t().aboutTags.map(function (x) { return "<li>" + esc(x) + "</li>"; }).join("");
+  function renderWork() {
+    $("work").innerHTML = t().workCap.map(function (cap, i) {
+      return '<figure><div class="work__img"><img src="' + esc(CONFIG.WORK_IMAGES[i]) + '" alt="" loading="lazy" /></div>' +
+        "<figcaption>" + esc(cap) + "</figcaption></figure>";
+    }).join("");
+  }
+
+  // Approved / rejected example clips. Labels change with the language; the
+  // <video> elements are built once so a language switch doesn't reload them.
+  function renderClips(hostId, labels, sources, kind) {
+    var host = $(hostId);
+    if (host.children.length === labels.length) {
+      host.querySelectorAll(".clip__t span").forEach(function (el, i) { el.textContent = labels[i]; });
+      return;
+    }
+    host.innerHTML = labels.map(function (label, i) {
+      // "#t=0.1" makes phones paint the first frame instead of a black box.
+      return '<figure class="clip clip--' + kind + '"><div class="clip__v"><video src="' + esc(sources[i]) +
+        '#t=0.1" controls playsinline muted loop preload="metadata"></video></div>' +
+        '<figcaption class="clip__t">' + (kind === "good" ? CHECK : CROSS) + "<span>" + esc(label) + "</span></figcaption></figure>";
+    }).join("");
+    host.querySelectorAll("video").forEach(function (v, i) {
+      v.addEventListener("play", function () { track("clip_play", { kind: kind, n: i + 1 }); }, { once: true });
+    });
   }
 
   function renderElig() {
@@ -189,7 +203,9 @@
     renderCalc();
     renderJoin();
     renderSteps();
-    renderAbout();
+    renderWork();
+    renderClips("clips-good", t().goodClips, CONFIG.VIDEO.good, "good");
+    renderClips("clips-bad", t().badClips, CONFIG.VIDEO.bad, "bad");
     renderElig();
     renderList("do-list", t().do, CHECK);
     renderList("dont-list", t().dont, CROSS);
